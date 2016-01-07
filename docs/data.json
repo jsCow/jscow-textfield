@@ -1,0 +1,76 @@
+{
+    "project": {
+        "name": "jscow-group",
+        "description": "jsCow - ??? - Javascript Component Framework",
+        "version": "1.0.0",
+        "url": ""
+    },
+    "files": {
+        "src\\jscow\\components\\jscow-textfield.js": {
+            "name": "src\\jscow\\components\\jscow-textfield.js",
+            "modules": {},
+            "classes": {
+                "jsCow.res.components.textfield": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        }
+    },
+    "modules": {},
+    "classes": {
+        "jsCow.res.components.textfield": {
+            "name": "jsCow.res.components.textfield",
+            "shortname": "jsCow.res.components.textfield",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "src\\jscow\\components\\jscow-textfield.js",
+            "line": 1,
+            "description": "jsCow textfield component is a reusable component used in client side jsCow applications. \nA textfield is a component, which enables users to interact with an application.",
+            "author": "Mario Linz <jscow@gmx.de>",
+            "type": "Class Provides the main class of the component",
+            "is_constructor": 1
+        }
+    },
+    "elements": {},
+    "classitems": [
+        {
+            "file": "src\\jscow\\components\\jscow-textfield.js",
+            "line": 14,
+            "description": "The init method will be called by initializing the component. \nThe model, view and controller should be set within this method.\n\t\t\n\t\tthis.addController(jsCow.res.controller.textfield);\n\t\tthis.addModel(jsCow.res.model.textfield);\n\t\tthis.addView(jsCow.res.view.textfield);",
+            "itemtype": "method",
+            "name": "init",
+            "access": "public",
+            "tagname": "",
+            "return": {
+                "description": "Instance of the component itself.",
+                "type": "Object"
+            },
+            "class": "jsCow.res.components.textfield"
+        },
+        {
+            "file": "src\\jscow\\components\\jscow-textfield.js",
+            "line": 36,
+            "description": "This method is a user interaction method to set the value of the textfield.\n\t  \t\n\t  \t// New textfield instance with a default value\n\t  \ttextfield = jsCow.get(jsCow.res.components.textfield, {\n\t\t\tvalue: 'This is the default textfield value'\n\t\t});\n\t\t\n\t  \t// Set value by method\n\t  \ttextfield.value('My textfield value');",
+            "itemtype": "method",
+            "name": "value",
+            "params": [
+                {
+                    "name": "value",
+                    "description": "Value of the textfield.",
+                    "type": "String"
+                }
+            ],
+            "access": "public",
+            "tagname": "",
+            "return": {
+                "description": "Instance of the component itself.",
+                "type": "Object"
+            },
+            "class": "jsCow.res.components.textfield"
+        }
+    ],
+    "warnings": []
+}
