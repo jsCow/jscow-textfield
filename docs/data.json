@@ -10,7 +10,10 @@
             "name": "src\\jscow\\components\\jscow-textfield.js",
             "modules": {},
             "classes": {
-                "jsCow.res.components.textfield": 1
+                "jsCow.res.components.textfield": 1,
+                "jsCow.res.model.textfield": 1,
+                "jsCow.res.view.textfield": 1,
+                "jsCow.res.controller.textfield": 1
             },
             "fors": {},
             "namespaces": {}
@@ -31,6 +34,51 @@
             "description": "jsCow textfield component is a reusable component used in client side jsCow applications. \nA textfield is a component, which enables users to interact with an application.",
             "author": "Mario Linz <jscow@gmx.de>",
             "type": "Class Provides the main class of the component",
+            "is_constructor": 1
+        },
+        "jsCow.res.model.textfield": {
+            "name": "jsCow.res.model.textfield",
+            "shortname": "jsCow.res.model.textfield",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "src\\jscow\\components\\jscow-textfield.js",
+            "line": 245,
+            "description": "Represents the model class of the jsCow textfield component.",
+            "author": "Mario Linz <jscow@gmx.de>",
+            "type": "Class Provides the model class of the component",
+            "is_constructor": 1
+        },
+        "jsCow.res.view.textfield": {
+            "name": "jsCow.res.view.textfield",
+            "shortname": "jsCow.res.view.textfield",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "src\\jscow\\components\\jscow-textfield.js",
+            "line": 302,
+            "description": "Represents the view class of the jsCow button component.",
+            "author": "Mario Linz <jscow@gmx.de>",
+            "type": "Class Provides the view class of the component",
+            "is_constructor": 1
+        },
+        "jsCow.res.controller.textfield": {
+            "name": "jsCow.res.controller.textfield",
+            "shortname": "jsCow.res.controller.textfield",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "src\\jscow\\components\\jscow-textfield.js",
+            "line": 434,
+            "description": "Represents the controller class of the jsCow textfield component.",
+            "author": "Mario Linz <jscow@gmx.de>",
+            "type": "Class Provides the controller class of the component",
             "is_constructor": 1
         }
     },
@@ -70,6 +118,252 @@
                 "type": "Object"
             },
             "class": "jsCow.res.components.textfield"
+        },
+        {
+            "file": "src\\jscow\\components\\jscow-textfield.js",
+            "line": 72,
+            "description": "This method is a user interaction method to set the state of the textfield.\nThe textfield will be displayed as a info field.\n\t  \t\n\t  \t// New textfield instance with a default value\n\t  \ttextfield6 = jsCow.get(jsCow.res.components.textfield, {\n\t\t\tvalue: 'Textfield with info status',\n\t\t\tinfo: true\n\t\t});\n\t\ttextfield6.run();\n\t\t\n\t  \t// Set value by method\n\t  \ttextfield.info();",
+            "itemtype": "method",
+            "name": "info",
+            "access": "public",
+            "tagname": "",
+            "return": {
+                "description": "Instance of the component itself.",
+                "type": "Object"
+            },
+            "class": "jsCow.res.components.textfield"
+        },
+        {
+            "file": "src\\jscow\\components\\jscow-textfield.js",
+            "line": 101,
+            "description": "This method is a user interaction method to set the state of the textfield.\nThe textfield will be displayed as a success field.\n\t  \t\n\t  \t// New textfield instance with a default value\n\t  \ttextfield6 = jsCow.get(jsCow.res.components.textfield, {\n\t\t\tvalue: 'Textfield with info status',\n\t\t\tsuccess: true\n\t\t});\n\t\ttextfield6.run();\n\t\t\n\t  \t// Set value by method\n\t  \ttextfield.success();",
+            "itemtype": "method",
+            "name": "success",
+            "access": "public",
+            "tagname": "",
+            "return": {
+                "description": "Instance of the component itself.",
+                "type": "Object"
+            },
+            "class": "jsCow.res.components.textfield"
+        },
+        {
+            "file": "src\\jscow\\components\\jscow-textfield.js",
+            "line": 130,
+            "description": "This method is a user interaction method to set the state of the textfield.\nThe textfield will be displayed as a warning field.\n\t  \t\n\t  \t// New textfield instance with a default value\n\t  \ttextfield6 = jsCow.get(jsCow.res.components.textfield, {\n\t\t\tvalue: 'Textfield with info status',\n\t\t\twarning: true\n\t\t});\n\t\ttextfield6.run();\n\t\t\n\t  \t// Set value by method\n\t  \ttextfield.warning();",
+            "itemtype": "method",
+            "name": "warning",
+            "access": "public",
+            "tagname": "",
+            "return": {
+                "description": "Instance of the component itself.",
+                "type": "Object"
+            },
+            "class": "jsCow.res.components.textfield"
+        },
+        {
+            "file": "src\\jscow\\components\\jscow-textfield.js",
+            "line": 159,
+            "description": "This method is a user interaction method to set the state of the textfield.\nThe textfield will be displayed as a danger field.\n\t  \t\n\t  \t// New textfield instance with a default value\n\t  \ttextfield6 = jsCow.get(jsCow.res.components.textfield, {\n\t\t\tvalue: 'Textfield with info status',\n\t\t\tdanger: true\n\t\t});\n\t\ttextfield6.run();\n\t\t\n\t  \t// Set value by method\n\t  \ttextfield.danger();",
+            "itemtype": "method",
+            "name": "danger",
+            "access": "public",
+            "tagname": "",
+            "return": {
+                "description": "Instance of the component itself.",
+                "type": "Object"
+            },
+            "class": "jsCow.res.components.textfield"
+        },
+        {
+            "file": "src\\jscow\\components\\jscow-textfield.js",
+            "line": 188,
+            "description": "This method is a user interaction method to set the state of the textfield.\nThe textfield will be displayed as a standard field.\n\t  \t\n\t  \t// New textfield instance with a default value\n\t  \ttextfield6 = jsCow.get(jsCow.res.components.textfield, {\n\t\t\tvalue: 'Textfield with info status',\n\t\t\tstandard: true\n\t\t});\n\t\ttextfield6.run();\n\t\t\n\t  \t// Set value by method\n\t  \ttextfield.standard();",
+            "itemtype": "method",
+            "name": "standard",
+            "access": "public",
+            "tagname": "",
+            "return": {
+                "description": "Instance of the component itself.",
+                "type": "Object"
+            },
+            "class": "jsCow.res.components.textfield"
+        },
+        {
+            "file": "src\\jscow\\components\\jscow-textfield.js",
+            "line": 217,
+            "description": "This method is a user interaction method to set the tyoe of the textfield.\n\t  \t\n\t  \t// New textfield instance with a default type\n\t  \ttextfield = jsCow.get(jsCow.res.components.textfield, {\n\t\t\ttype: 'text|hidden|password|...'\n\t\t});\n\t\t\n\t  \t// Set value by method\n\t  \ttextfield.type('text');",
+            "itemtype": "method",
+            "name": "type",
+            "params": [
+                {
+                    "name": "type",
+                    "description": "Type of the textfield.",
+                    "type": "String"
+                }
+            ],
+            "access": "public",
+            "tagname": "",
+            "return": {
+                "description": "Instance of the component itself.",
+                "type": "Object"
+            },
+            "class": "jsCow.res.components.textfield"
+        },
+        {
+            "file": "src\\jscow\\components\\jscow-textfield.js",
+            "line": 256,
+            "description": "JSON object with all model data.\nDefault model data are:\n\t\t\n\t\t{\n\t\t\tenabled: true,\n\t\t\tvisible: true,\n\t\t\tvalue: \"\",\n\t\t\ttype: \"text\",\n\t\t\tstate: false\n\t\t}",
+            "itemtype": "property",
+            "name": "data",
+            "type": "Object",
+            "class": "jsCow.res.model.textfield"
+        },
+        {
+            "file": "src\\jscow\\components\\jscow-textfield.js",
+            "line": 284,
+            "description": "The model init method will only trigger the internal component event 'model.ready'.\nThe event data are the model data.\nDefault listener for this event is registered in the controller of the component. \n\t  \t\n\t  \tthis.trigger(\"model.ready\", this.data);",
+            "itemtype": "method",
+            "name": "init",
+            "access": "private",
+            "tagname": "",
+            "class": "jsCow.res.model.textfield"
+        },
+        {
+            "file": "src\\jscow\\components\\jscow-textfield.js",
+            "line": 313,
+            "description": "Objekt for all needed HTML-DOM elements of the component.",
+            "itemtype": "property",
+            "name": "dom",
+            "type": "Object",
+            "default": "{} Object",
+            "class": "jsCow.res.view.textfield"
+        },
+        {
+            "file": "src\\jscow\\components\\jscow-textfield.js",
+            "line": 322,
+            "description": "Represents the html main container of the component.",
+            "itemtype": "property",
+            "name": "dom.main",
+            "type": "Object",
+            "default": "<div/> jQuery DIV object",
+            "class": "jsCow.res.view.textfield"
+        },
+        {
+            "file": "src\\jscow\\components\\jscow-textfield.js",
+            "line": 331,
+            "description": "Represents the html textfield of the component.",
+            "itemtype": "property",
+            "name": "dom.field",
+            "type": "Object",
+            "default": "<div/> HTML input tag",
+            "class": "jsCow.res.view.textfield"
+        },
+        {
+            "file": "src\\jscow\\components\\jscow-textfield.js",
+            "line": 346,
+            "description": "The view init method can used to set default view properties.\nBy trigger the event 'model.ready' the controller will trigger the event 'view.init' to call this method.\nThis method register all jquery events for \"keyup\" and trigger the internal event \"chnaged\". \n\t  \t\n\t  \t// For example\n\t  \tthis.trigger(\"mouseover\");\n\t  \tthis.trigger(\"mouseout\");\n\t  \tthis.trigger(\"press\");\n\t  \tthis.trigger(\"pressed\");\n\t  \tthis.trigger(\"click\");\n\t\t\n\t\t// The view init will be triggered by the controller\n\t  \tthis..trigger(\"changed\", {\n\t\t\tvalue: this.dom.field.val()\n\t\t});",
+            "itemtype": "method",
+            "name": "init Set all jquery events and trigger the component event 'changed'.",
+            "class": "jsCow.res.view.textfield"
+        },
+        {
+            "file": "src\\jscow\\components\\jscow-textfield.js",
+            "line": 384,
+            "description": "The view update method will update the complete component view by trigger the event 'view.update' with all available model data.\n\t  \t\n\t  \tthis.trigger(\n\t  \t\t\"view.update\", \n\t  \t\tthis.cmp().config()\n\t  \t);",
+            "itemtype": "method",
+            "name": "update",
+            "params": [
+                {
+                    "name": "eventdata",
+                    "description": "Contains all sent event data",
+                    "type": "Object"
+                }
+            ],
+            "class": "jsCow.res.view.textfield"
+        },
+        {
+            "file": "src\\jscow\\components\\jscow-textfield.js",
+            "line": 446,
+            "description": "The controller init method register all needed events within the controller and provides all related event handler.\n\n\t  \t// Code examples\n\t  \tthis.on(\"model.ready\", this.isModelReady);\n\t\tthis.on(\"value\", this.value);\n\t\tthis.on(\"state\", this.state);\n\t\tthis.on(\"changed\", this.changed);\n\t\tthis.on(\"type\", this.type);",
+            "itemtype": "method",
+            "name": "init",
+            "class": "jsCow.res.controller.textfield"
+        },
+        {
+            "file": "src\\jscow\\components\\jscow-textfield.js",
+            "line": 467,
+            "description": "The controller isModelReady method is an event handler and will be triggert by the event 'model.ready' with all available model data.\nIs the model ready the 'view.init' event will triggert by this handler with all available model data again.\n\t  \t\n\t  \tthis.trigger(\n\t\t\t\"view.init\", \n\t\t\te.data\n\t\t);",
+            "itemtype": "method",
+            "name": "isModelReady",
+            "params": [
+                {
+                    "name": "eventdata",
+                    "description": "Contains all sent event data",
+                    "type": "Object"
+                }
+            ],
+            "class": "jsCow.res.controller.textfield"
+        },
+        {
+            "file": "src\\jscow\\components\\jscow-textfield.js",
+            "line": 487,
+            "description": "The controller value method is an event handler and will be triggert by the event 'value' with all available model data.\nThis method will set value of the HTML input tag.\n\t  \t\n\t  \tthis.cmp().config({\n\t\t\tvalue: e.data.value\n\t\t});",
+            "itemtype": "method",
+            "name": "value",
+            "params": [
+                {
+                    "name": "eventdata",
+                    "description": "Contains all sent event data",
+                    "type": "Object"
+                }
+            ],
+            "class": "jsCow.res.controller.textfield"
+        },
+        {
+            "file": "src\\jscow\\components\\jscow-textfield.js",
+            "line": 505,
+            "description": "The controller value method is an event handler and will be triggert by the event 'state' with all available model data.\nThis method will set visual state (e.g. default|success|info|warning|danger) of the HTML input tag.\n\t  \t\n\t  \tthis.cmp().config({\n\t\t\tvalue: e.data.state\n\t\t});",
+            "itemtype": "method",
+            "name": "state",
+            "params": [
+                {
+                    "name": "eventdata",
+                    "description": "Contains all sent event data",
+                    "type": "Object"
+                }
+            ],
+            "class": "jsCow.res.controller.textfield"
+        },
+        {
+            "file": "src\\jscow\\components\\jscow-textfield.js",
+            "line": 523,
+            "description": "The controller value method is an event handler and will be triggert by the event 'changed' with all available model data.\nIf the user interact with the textfield this method will syncronize the value of the HTML input tag with the component model.\n\t  \t\n\t  \tthis.cmp().config({\n\t\t\tvalue: e.data.value\n\t\t});",
+            "itemtype": "method",
+            "name": "changed",
+            "params": [
+                {
+                    "name": "eventdata",
+                    "description": "Contains all sent event data",
+                    "type": "Object"
+                }
+            ],
+            "class": "jsCow.res.controller.textfield"
+        },
+        {
+            "file": "src\\jscow\\components\\jscow-textfield.js",
+            "line": 541,
+            "description": "The controller value method is an event handler and will be triggert by the event 'type' with all available model data.\nThis method will set the type of the input tag for the textfield.\n\t  \t\n\t  \tthis.cmp().config({\n\t\t\tvalue: e.data.type\n\t\t});",
+            "itemtype": "method",
+            "name": "type",
+            "params": [
+                {
+                    "name": "eventdata",
+                    "description": "Contains all sent event data",
+                    "type": "Object"
+                }
+            ],
+            "class": "jsCow.res.controller.textfield"
         }
     ],
     "warnings": []
