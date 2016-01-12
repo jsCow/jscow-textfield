@@ -1,5 +1,5 @@
-# jscow-???
-Provides a ??? component for the jscow component framework.
+# jscow-textfield
+Provides a textfield component for the jscow component framework.
 
 ## Install
 
@@ -15,7 +15,7 @@ grunt
 
 ## Dependencies
 
-`jscow-???` needs the following libraries:
+`jscow-textfield` needs the following libraries:
 
 * [grunt](https://www.npmjs.com/package/grunt) The JavaScript Task Runner - node package for development
 * [grunt-cli](https://www.npmjs.com/package/grunt-cli) Grunt command line interface - node package for development
@@ -33,4 +33,4 @@ The following grun packages will be automatically installed with 'npm install'
 
 ## License
 
-`jscow-???` is licensed under the GNU GPL.
+`jscow-textfield` is licensed under the GNU GPL.

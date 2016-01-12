@@ -1,6 +1,6 @@
 {
-  "name": "jscow-group",
-  "description": "jsCow - ??? - Javascript Component Framework",
+  "name": "jscow-textfield",
+  "description": "jsCow - Textfield - Javascript Component Framework",
   "version": "1.0.0",
   "license": "GPL-3.0+",
   "readme": "README.md",
@@ -32,6 +32,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jsCow/jscow-???.git"
+    "url": "https://github.com/jsCow/jscow-textfield.git"
   }
 }
